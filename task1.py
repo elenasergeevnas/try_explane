@@ -28,3 +28,4 @@ with open ('students_new.csv', 'w', encoding = 'utf8', newline = '') as file:
     w = csv.writer (file, delimiter=',')
     w.writerow(['id', 'name', 'titleProject_id', 'class', 'score'])
     w.writerows(answer)
+
