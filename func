@@ -1,0 +1,23 @@
+def glasn(s):
+    '''
+Считает сколько гласных в строке s
+    :param s: строка
+    :return:
+    '''
+    ans = 0
+    for i in s:
+        if i in 'аеёиоуыэюя':
+            ans += 1
+    return ans
+
+
+def kr_13(end):
+    '''
+    считает сколько чисел от 1 до end делится на 13
+    :param end: конец перебора
+    :return: 
+    '''
+    k = 0
+    for i in range(1, end + 1):
+        if i % 13 == 0: k += 1
+    return k
